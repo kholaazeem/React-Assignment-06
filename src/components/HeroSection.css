@@ -1,0 +1,118 @@
+/* Main Section Wrapper */
+.hero-section {
+  padding: 120px 20px 80px; /* Upar se margin taake navbar ke neechay na chhupe */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F9FA; /* Off-white background jesa image mein ha */
+  min-height: 85vh;
+}
+
+/* Badge Styling (Lightning Bolt) */
+.hero-badge {
+  background: rgba(0, 229, 255, 0.1); /* Halka cyan background */
+  color: #5ce3f1; /* Dark cyan text */
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(253, 253, 253, 0);
+}
+
+.badge-icon {
+  color: #00E5FF; /* Bright cyan icon */
+}
+
+/* Main Title Styling */
+.hero-title {
+  font-size: 4.5rem; /* Bada font desktop ke liye */
+  font-weight: 800;
+  color: #0F172A;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  margin-bottom: 24px;
+}
+
+/* Subtitle Styling */
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: #64748B;
+  max-width: 600px; /* Taake text zyada phel na jaye */
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* Buttons Container */
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap; /* Agar screen choti ho to buttons neechay aajayen */
+}
+
+/* Shared Hero Button Styling */
+.hero-btn {
+  padding: 12px 28px;
+  border-radius: 12px; /* Thora square-ish modern look */
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Outline Button Styling (Learn More) */
+.outline-btn {
+  background: white;
+  color: #0F172A;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.outline-btn:hover {
+  background: #F8FAFC;
+  border-color: #CBD5E1;
+  transform: translateY(-2px);
+}
+
+/* Simple Slide Up Animation (Thora Pro Feel ke liye) */
+.slide-up-anim {
+  animation: slideUp 0.8s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === RESPONSIVE QUERIES (Mobile & Tablets) === */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 100px 15px 60px;
+    min-height: auto;
+  }
+  
+  .hero-title {
+    font-size: 2.8rem; /* Mobile par font chota kar diya */
+    letter-spacing: -1px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  
+  .hero-btn {
+    width: 100%; /* Mobile par buttons full width ho jayenge */
+  }
+}

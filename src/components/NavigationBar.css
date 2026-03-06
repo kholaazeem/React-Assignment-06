@@ -1,0 +1,75 @@
+/* Glassmorphism Effect */
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.7) !important; 
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 15px 0;
+  transition: all 0.3s ease;
+}
+
+/* Logo Styling */
+.brand-text {
+  color: #0F172A !important;
+  font-size: 1.25rem;
+}
+
+.logo-circle {
+  /* Yahan sirf background update kiya ha */
+  background: linear-gradient(90deg, #00E5FF 0%, #2db6c5 100%); 
+  color: rgb(0, 0, 0);
+  width: 35px;
+  height: 35px;
+  border-radius: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* Center Links */
+.nav-links a {
+  color: #64748B !important;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #0F172A !important;
+}
+
+/* Login Text */
+.login-text {
+  color: #0F172A !important;
+  border-radius: 10px;
+}
+
+.login-text:hover {
+  /* Yahan background update kiya ha */
+  background: linear-gradient(90deg, #00E5FF 0%, #28b5c5 100%) !important;
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* DRY Custom Button Base Styling */
+.custom-btn {
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Specific styling for the primary button on Navbar */
+.primary-glow-btn {
+  /* Yahan background update kiya ha */
+  background: linear-gradient(90deg, #00E5FF 0%, #1ca6b6 100%);
+  color: rgb(5, 4, 4);
+  box-shadow: 0 4px 15px rgba(2, 172, 206, 0.411); /* Premium glow effect as it is */
+}
