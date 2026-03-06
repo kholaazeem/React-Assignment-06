@@ -1,118 +1,325 @@
-/* Main Section Wrapper */
+/* Section Background */
 .hero-section {
-  padding: 120px 20px 80px; /* Upar se margin taake navbar ke neechay na chhupe */
+  padding: 140px 0 100px;
+  background-color: #F8FBFF; /* Image jesa soft white/blue background */
+  overflow: hidden;
+  min-height: 90vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: #F8F9FA; /* Off-white background jesa image mein ha */
-  min-height: 85vh;
 }
 
-/* Badge Styling (Lightning Bolt) */
+/* === LEFT COLUMN STYLING === */
+
+/* Badge */
 .hero-badge {
-  background: rgba(0, 229, 255, 0.1); /* Halka cyan background */
-  color: #5ce3f1; /* Dark cyan text */
-  padding: 8px 16px;
+  background-color: #E0F7FA;
+  color: #00B4D8;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 6px 14px;
   border-radius: 50px;
-  font-size: 0.875rem;
-  font-weight: 600;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 24px;
-  border: 1px solid rgba(253, 253, 253, 0);
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
 }
 
-.badge-icon {
-  color: #00E5FF; /* Bright cyan icon */
+.badge-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #00B4D8;
+  border-radius: 50%;
+  margin-right: 8px;
 }
 
-/* Main Title Styling */
+/* Typography */
 .hero-title {
-  font-size: 4.5rem; /* Bada font desktop ke liye */
+  font-size: 4.2rem;
   font-weight: 800;
-  color: #0F172A;
+  color: #000000; /* Deep Teal color exact image wala */
   line-height: 1.1;
   letter-spacing: -1.5px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
-/* Subtitle Styling */
 .hero-subtitle {
   font-size: 1.15rem;
   color: #64748B;
-  max-width: 600px; /* Taake text zyada phel na jaye */
+  max-width: 500px;
   line-height: 1.6;
   margin-bottom: 40px;
 }
 
-/* Buttons Container */
+/* Buttons */
 .hero-buttons {
   display: flex;
-  gap: 16px;
-  justify-content: center;
-  flex-wrap: wrap; /* Agar screen choti ho to buttons neechay aajayen */
-}
-
-/* Shared Hero Button Styling */
-.hero-btn {
-  padding: 12px 28px;
-  border-radius: 12px; /* Thora square-ish modern look */
-  font-size: 1rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  display: flex;
+  gap: 20px;
   align-items: center;
-  justify-content: center;
 }
 
-/* Outline Button Styling (Learn More) */
-.outline-btn {
+.btn-get-started {
+background: linear-gradient(90deg, #00E5FF 0%, #1ca6b6 100%);
+  color: #000000;
+  padding: 14px 40px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0, 229, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+
+
+.btn-watch-demo {
   background: white;
   color: #0F172A;
-  border: 1px solid #E2E8F0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+ border: 1px solid rgb(240, 236, 236);
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 
-.outline-btn:hover {
-  background: #F8FAFC;
-  border-color: #CBD5E1;
-  transform: translateY(-2px);
+.btn-watch-demo:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(90deg, #00E5FF 0%, #1ca6b6 100%);
 }
 
-/* Simple Slide Up Animation (Thora Pro Feel ke liye) */
-.slide-up-anim {
-  animation: slideUp 0.8s ease forwards;
+.play-icon {
+  font-size: 1.2rem;
+  margin-right: 8px;
+  color: #0F172A;
+}
+
+span{
+  color: linear-gradient(90deg, #00E5FF 0%, #1ca6b6 100%);
+}
+
+/* === RIGHT COLUMN VISUALS (FLOATING CARDS) === */
+
+.visuals-container {
+  position: relative;
+  height: 450px;
+  width: 100%;
+}
+
+.floating-card {
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+/* Main Dark Card */
+.main-dark-card {
+  background: #0F172A; /* Midnight Blue */
+  color: white;
+  width: 340px;
+  padding: 25px;
+  top: 10%;
+  left: 10%;
+  transform: rotate(-8deg); /* Tilted left */
+  z-index: 2;
+}
+
+.chip-icon {
+  font-size: 1.8rem;
+  color: #CBD5E1;
+}
+
+.card-tier {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: #94A3B8;
+}
+
+.balance-label {
+  font-size: 0.85rem;
+  color: #94A3B8;
+  margin-bottom: 5px;
+}
+
+.card-balance {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.card-number {
+  font-family: monospace;
+  font-size: 1rem;
+  color: #CBD5E1;
+}
+
+.mastercard-icon {
+  font-size: 2.5rem;
+  color: #94A3B8;
+}
+
+/* Goal Card (Tesla) */
+.goal-card {
+  background: white;
+  width: 180px;
+  padding: 15px;
+  top: 40%;
+  right: 5%;
+  transform: rotate(12deg); /* Tilted right */
+  z-index: 3;
+}
+
+.goal-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #0F172A;
+  margin-bottom: 8px;
+}
+
+.progress-bar-container {
+  background: #F1F5F9;
+  height: 6px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  background: #00E5FF;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.goal-text {
+  font-size: 0.7rem;
+  color: #00E5FF;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Transfer Card */
+.transfer-card {
+  background: white;
+  width: 260px;
+  padding: 20px;
+  bottom: 5%;
+  left: 35%;
+  z-index: 4;
+}
+
+.success-icon-bg {
+  background: #DCFCE7;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+}
+
+.transfer-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0F172A;
+  margin: 0;
+}
+
+.transfer-desc {
+  font-size: 0.75rem;
+  color: #64748B;
+  margin: 0;
+}
+
+.transfer-amount {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin: 0;
+}
+
+.instant-badge {
+  background: #F1F5F9;
+  color: #64748B;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+}
+
+/* === ANIMATIONS === */
+
+.slide-up {
   opacity: 0;
-  transform: translateY(20px);
+  animation: slideUpFade 0.8s ease forwards;
 }
 
-@keyframes slideUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@keyframes slideUpFade {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
-/* === RESPONSIVE QUERIES (Mobile & Tablets) === */
-@media (max-width: 768px) {
+/* Floating Effects for cards */
+.float-anim-1 { animation: float1 6s ease-in-out infinite; }
+.float-anim-2 { animation: float2 5s ease-in-out infinite; }
+.float-anim-3 { animation: float3 7s ease-in-out infinite; }
+
+@keyframes float1 {
+  0%, 100% { transform: rotate(-8deg) translateY(0); }
+  50% { transform: rotate(-8deg) translateY(-15px); }
+}
+@keyframes float2 {
+  0%, 100% { transform: rotate(12deg) translateY(0); }
+  50% { transform: rotate(12deg) translateY(-10px); }
+}
+@keyframes float3 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* === RESPONSIVE STYLING === */
+@media (max-width: 991px) {
   .hero-section {
-    padding: 100px 15px 60px;
-    min-height: auto;
-  }
-  
-  .hero-title {
-    font-size: 2.8rem; /* Mobile par font chota kar diya */
-    letter-spacing: -1px;
+    padding: 120px 0 60px;
+    text-align: center;
   }
   
   .hero-subtitle {
-    font-size: 1rem;
-    padding: 0 10px;
+    margin: 0 auto 30px auto;
   }
-  
-  .hero-btn {
-    width: 100%; /* Mobile par buttons full width ho jayenge */
+
+  .hero-buttons {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  /* Center the visual container on mobile and scale it down */
+  .visuals-container {
+    transform: scale(0.85);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+  }
+
+  .main-dark-card { left: 5%; }
+  .transfer-card { left: 15%; bottom: -5%; }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn-get-started, .btn-watch-demo {
+    width: 100%;
+    justify-content: center;
+  }
+  .visuals-container {
+    transform: scale(0.65);
+    margin-top: -40px;
   }
 }
