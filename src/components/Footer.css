@@ -1,0 +1,114 @@
+/* Main Footer Background (Solid, No Gradient) */
+.footer-section {
+  background-color: #061332; 
+  color: #94A3B8; /* Slate gray text color */
+  padding: 80px 0 30px;
+}
+
+/* --- Brand Column --- */
+.footer-brand {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo-circle {
+ background: linear-gradient(90deg, #00E5FF 0%, #2db6c5 100%); 
+  color: #061332; /* Text dark */
+  width: 35px;
+  height: 35px;
+  border-radius: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.footer-brand-text {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.footer-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 280px;
+  margin: 0;
+}
+
+/* --- Headings & Links --- */
+.footer-heading {
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style: none; /* Bullets khatam karne ke liye */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #94A3B8;
+  text-decoration: none; /* Underline khatam karne ke liye */
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
+}
+
+/* Hover par text cyan ho jayega */
+.footer-links a:hover {
+  color: #00E5FF;
+}
+
+/* --- Social Icons (Connect) --- */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05); /* Image jesa halka grey circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #94A3B8;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.social-icon:hover {
+  background: #00E5FF;
+  color: #061332;
+  transform: translateY(-3px); /* Hover par thora upar uthega */
+}
+
+/* --- Divider Line & Copyright --- */
+.footer-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1); /* Halka white border */
+  margin-bottom: 30px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #64748B;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .footer-section {
+    padding: 60px 0 20px;
+  }
+}

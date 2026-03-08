@@ -1,0 +1,106 @@
+/* Main Section Wrapper */
+.features-section {
+  padding: 80px 0 100px;
+  background-color: #FFFFFF; /* White background jesa image mein hai */
+}
+
+/* Header Styling */
+.features-header {
+  margin-bottom: 60px;
+}
+
+.features-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #0F172A; /* Midnight blue / Dark Slate */
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.features-subtitle {
+  font-size: 1.1rem;
+  color: #64748B;
+  font-weight: 500;
+}
+
+/* Feature Card Styling */
+.feature-card {
+  background: #FFFFFF;
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid #F1F5F9; /* Bohat light sa border */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); /* Soft shadow jesa Lovable design mein hai */
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Card Hover Effect */
+.feature-card:hover {
+  transform: translateY(-5px); /* Hover par thora upar uthega */
+  box-shadow: 0 12px 30px rgba(0, 229, 255, 0.08); /* Halka sa cyan glow shadow */
+  border-color: #E0F7FA;
+}
+
+/* Icon Wrapper Styling */
+.feature-icon-wrapper {
+  background: #E0F7FA; /* Light Cyan Background */
+  color: #00B4D8; /* Main Cyan color */
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px; /* Thora rounded square jesa image mein hai */
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon-wrapper {
+  background: #00E5FF;
+  color: white;
+}
+
+/* Card Text Styling */
+.feature-card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0F172A;
+  margin-bottom: 10px;
+}
+
+.feature-card-desc {
+  font-size: 0.95rem;
+  color: #64748B;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Same slide-up animation jo humne Hero mein use ki thi */
+.slide-up {
+  opacity: 0;
+  animation: slideUpFade 0.8s ease forwards;
+}
+
+@keyframes slideUpFade {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .features-section {
+    padding: 60px 0;
+  }
+  
+  .features-title {
+    font-size: 2.2rem;
+  }
+  
+  .feature-card {
+    padding: 25px;
+  }
+}

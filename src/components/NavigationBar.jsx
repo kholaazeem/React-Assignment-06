@@ -26,7 +26,8 @@ const NavigationBar = () => {
           {/* mx-auto navigation links ko center mein rakhega */}
           <Nav className="mx-auto nav-links">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/features">Features</Nav.Link>
+         
+<Nav.Link href="/#features">Features</Nav.Link>
             <Nav.Link as={Link} to="/about">About Us</Nav.Link>
           </Nav>
 

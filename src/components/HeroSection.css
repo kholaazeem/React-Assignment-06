@@ -42,6 +42,25 @@
   margin-bottom: 20px;
 }
 
+/* Purani .hero-title styling wese hi rahegi, uske neechay ye add karen */
+
+.hero-title span {
+  /* 1. Gradient color set karen (Left to Right) */
+  /* Maine wahi modern cyan mix kiya ha jo humne pehle discuss kiya tha */
+  background-image: linear-gradient(90deg, #00E5FF 0%, #00B4D8 100%);
+  
+  /* 2. Is background gradient ko sirf text ke andar "qaid" (clip) kar den */
+  -webkit-background-clip: text; /* Safari aur Chrome ke liye */
+  background-clip: text;         /* Standard method */
+  
+  /* 3. Asli text ka rang transparent (gayab) kar den */
+  /* Jab asli text gayab hoga, tabhi uske neechay wala gradient nazar aayega */
+  color: transparent !important;
+  
+  /* Optional: Thora unique dikhane ke liye font-weight thora aur heavy kar skte hain span par */
+  font-weight: 800;
+}
+
 .hero-subtitle {
   font-size: 1.15rem;
   color: #64748B;

@@ -1,0 +1,81 @@
+/* Main Section */
+.cta-section {
+  padding: 40px 0 100px;
+  background-color: #FFFFFF; /* Pichle section se match karne k liye */
+}
+
+/* Dark Box Wrapper */
+.cta-wrapper {
+background: linear-gradient(180deg, #061332 0%, #081f57 100%);
+  border-radius: 24px; /* Image jesy bare rounded corners */
+  padding: 70px 30px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
+}
+
+/* Typography */
+.cta-title {
+  color: #FFFFFF;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+}
+
+.cta-subtitle {
+  color: #94A3B8; /* Slate gray color */
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Button Styling */
+.cta-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #00E5FF 0%, #00B4D8 100%);
+  color: #0F172A; /* Text dark blue taake contrast acha aye */
+  padding: 14px 36px;
+  border-radius: 12px; /* Thora rounded square look */
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  /* Ye line button ko image jesa "glow" effect degi */
+  box-shadow: 0 8px 25px rgba(0, 229, 255, 0.4); 
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #00CBE6;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 229, 255, 0.5);
+  color: #0F172A;
+}
+
+/* Animation */
+.slide-up {
+  opacity: 0;
+  animation: slideUpFade 0.8s ease forwards;
+}
+
+@keyframes slideUpFade {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive (Mobile Screens) */
+@media (max-width: 768px) {
+  .cta-wrapper {
+    padding: 50px 20px;
+    border-radius: 20px;
+  }
+  
+  .cta-title {
+    font-size: 2.2rem;
+  }
+  
+  .cta-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+}
